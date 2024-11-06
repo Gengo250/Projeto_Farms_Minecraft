@@ -1,76 +1,150 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= page.title %></title>
-    <link rel="stylesheet" href="/css/Main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= page.title %></title>
+  <link rel="stylesheet" href="/css/subpagina.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap">
 </head>
 <body>
-    <div class="grid-conteiner">
-        <header>
-            <div class="header-conteiner">
-            <img class="logo" src="/img/img_logo_referências/Minecraft-Logo.png" alt="logo">
-            <ol class="menu">
-                <% page.content.header.menu.forEach(item => { %>
-                    <li><a href="<%= item.link %>"><%= item.text %></a></li>
-                <% }); %>
-            </ol>
+  <div class="grid-conteiner">
+    <header>
+      <nav class="menu-header">
+        <div class="logo-container">
+          <a href="Main.html"><img class="logo" src="/img/img_logo_referências/logo.png" alt="logo"></a>
         </div>
-        </header>
-        
-        <section class="slideimg">
-            <div class="slider-wrapper">
-                <div class="slider">
-                    <% page.content.sliderImages.forEach(img => { %>
-                        <img src="<%= img.src %>" alt="<%= img.alt %>">
-                    <% }); %>
-                </div>
-                <div class="slider-nav">
-                    <% page.content.sliderImages.forEach((img, index) => { %>
-                        <a href="#slide-<%= index + 1 %>"></a>
-                    <% }); %>
-                </div>
+        <ul class="menu-list">
+          <li><a href="/">Redstone</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Minérios ▼</a>
+            <div class="dropdown-content">
+              <a href="#">Ferro</a>
+              <a href="#">Ouro</a>
+              <a href="#">Esmeralda</a>
             </div>
-        </section>
-
-        <nav>
-            <p><%= page.content.nav.sectionTitle %></p>
-            <% page.content.nav.links.forEach(link => { %>
-                <li><%= link %></li>
-            <% }); %>
-        </nav>
-
-        <article>
-            <h2><%= page.content.article.title %></h2>
-            <ol>
-                <% page.content.article.content.forEach(item => { %>
-                    <li><img src="<%= item.imgSrc %>" alt=""></li>
-                    <li><p><%= item.text %></p></li>
-                <% }); %>
-            </ol>
-        </article>
-
-        <section class="slidevid">
-            <h2>Veja também:</h2>
-            <div class="slider-wrapper">
-                <div class="slider">
-                    <% page.content.videoSlider.forEach((video, index) => { %>
-                        <div id="slide-<%= index + 1 %>" class="slide">
-                            <iframe width="560" height="315" src="<%= video.src %>" title="<%= video.title %>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                    <% }); %>
-                </div>
-                <div class="slider-nav">
-                    <% page.content.videoSlider.forEach((video, index) => { %>
-                        <a href="#slide-<%= index + 1 %>"></a>
-                    <% }); %>
-                </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Comida ▼</a>
+            <div class="dropdown-content">
+              <a href="#">Carne de porco</a>
+              <a href="#">Batata</a>
+              <a href="#">Melância</a>
+              <a href="#">Abóbora</a>
             </div>
-        </section>
-        
-        <footer>
-            <p><%= page.content.footer.copyright %></p>
-            <p><%= page.content.footer.question %></p>
-        </footer>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Mob-Farms ▼</a>
+            <div class="dropdown-content">
+              <a href="#">Overworld</a>
+              <a href="#">Slime</a>
+              <a href="#">The End</a>
+              <a href="#">Nether</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="noticia">
+      <div class="img-conteiner">
+        <img src="<%= page.mainImage %>" alt="">
+      </div>
+      <div class="conteudo">
+        <span class="categoria"><%= page.category %></span>
+        <h1><%= page.title %></h1>
+        <p><%= page.summary %></p>
+        <div class="autor-data">
+          <span>Por <strong><%= page.author %></strong></span>
+          <span><%= page.date %></span>
+        </div>
+      </div>
+    </div>
+
+    <article class="principal">
+      <div class="redacao">
+        <ol>
+          <% page.content.forEach(section => { %>
+            <% if (section.type === 'heading') { %>
+              <li><h<%= section.level %>><%= section.text %></h<%= section.level %>></li>
+            <% } else if (section.type === 'paragraph') { %>
+              <li><p><%= section.text %></p></li>
+            <% } else if (section.type === 'image') { %>
+              <li><img class="article-img" src="<%= section.src %>" alt="<%= section.alt %>"></li>
+            <% } else if (section.type === 'list') { %>
+              <% section.items.forEach(item => { %>
+                <li><p><%= item %></p></li>
+              <% }) %>
+            <% } %>
+          <% }) %>
+        </ol>
+
+        <% page.content.forEach(section => { %>
+          <% if (section.type === 'video') { %>
+            <iframe width="560" height="315" src="<%= section.src %>" frameborder="0" allowfullscreen></iframe>
+          <% } %>
+        <% }) %>
+      </div>
+    </article>
+
+    <aside class="sidebar">
+      <h2>ϟ As Mais Lidas da Semana</h2>
+      <% page.relatedArticles.forEach(article => { %>
+        <div class="noticia-relacionada">
+          <div class="noticia-conteudo">
+            <img class="noticia-img" src="<%= article.image %>" alt="<%= article.title %>">
+            <div class="noticia-texto">
+              <span class="categoria"><%= article.category %></span>
+              <a href="<%= article.link %>"><h3><%= article.title %></h3></a>
+              <p>Por <%= article.author %></p>
+            </div>
+          </div>
+        </div>
+      <% }) %>
+    </aside>
+  </div>
+
+  <div class="rodape">
+    <footer class="footer-container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>INSTITUCIONAL</h3>
+          <ul>
+            <% page.footer.institucional.forEach(link => { %>
+              <li><a href="<%= link.link %>"><%= link.text %></a></li>
+            <% }) %>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>CANAIS DOS ENGENHEIROS</h3>
+          <ul>
+            <% page.footer.canaisDosEngenheiros.forEach(link => { %>
+              <li><a href="<%= link.link %>"><%= link.text %></a></li>
+            <% }) %>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>CONHEÇA O GRUPO</h3>
+          <ul>
+            <% page.footer.conhecaOGrupo.forEach(link => { %>
+              <li><a href="<%= link.link %>"><%= link.text %></a></li>
+            <% }) %>
+          </ul>
+        </div>
+        <div class="footer-section newsletter">
+          <h3><%= page.footer.newsletter.title %></h3>
+          <form action="#">
+            <input type="email" placeholder="<%= page.footer.newsletter.placeholder %>" required>
+            <button type="submit"><%= page.footer.newsletter.buttonText %></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p><%= page.footerBottom.text %></p>
+        <p><%= page.footerBottom.developedBy.text %> <a href="<%= page.footerBottom.developedBy.link %>">CREA-MC</a></p>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>
