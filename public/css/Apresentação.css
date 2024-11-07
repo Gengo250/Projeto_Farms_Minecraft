@@ -4,7 +4,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  background-color: whitesmoke;
+  background-color: #252525;
+  color: #fff;
 }
 
 header {
@@ -94,6 +95,27 @@ header {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+
+.Descrição{
+ text-align: center;
+}
+
+ul{
+  list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .rodape {
     background: url("/public/img/img_logo_referências/footer.png");
   }
