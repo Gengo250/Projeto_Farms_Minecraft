@@ -97,7 +97,18 @@ header {
   }
 
 
+
+.Main_img{
+  background: url('/public/img/Apresentações/MobFarms.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 550px;
+
+}
 .Descrição{
+ 
  text-align: center;
 }
 
