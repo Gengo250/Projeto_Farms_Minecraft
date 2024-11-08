@@ -383,7 +383,15 @@ article h2 {
 
 article p {
   font-size: 16px;
-  margin: 80px;
+  margin: 80px 500px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  background-color: #ff1e4f;
+  padding: 80px 200px;
 }
 
 .rodape {
