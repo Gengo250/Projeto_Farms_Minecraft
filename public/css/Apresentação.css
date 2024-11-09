@@ -16,114 +16,112 @@ header {
   text-align: center;
 }
 .menu-list a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    text-shadow: 1px 3px black;
-    padding: 8px 16px;
-    transition: background-color 0.3s;
-  }
-  
-  .menu-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.85);
-    padding: 16px;
-  }
-  
-  .logo-container {
-    padding-top: 8px;
-    margin-left: 192px;
-    margin-right: 192px;
-  }
-  
-  .logo {
-    height: 50px;
-    box-shadow: none;
-  }
-  
-  .menu-list {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .menu-list li {
-    position: relative;
-    margin-left: 16px;
-  }
-  
-  .menu-list a:hover {
-    background-color: #444;
-    border-radius: 8px;
-  }
-  
-  .dropdown {
-    cursor: pointer;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #252525;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    top: 100%;
-    left: 0;
-    padding: 8px 0;
-  }
-  
-  .dropdown-content a {
-    color: #f3e4e4;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ff1e4f;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 1px 3px black;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
 
+.menu-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 16px;
+}
 
+.logo-container {
+  padding-top: 8px;
+  margin-left: 192px;
+  margin-right: 192px;
+}
 
-.Main_img{
-  background: url('/public/img/Apresentações/MobFarms.png');
+.logo {
+  height: 50px;
+  box-shadow: none;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-list li {
+  position: relative;
+  margin-left: 16px;
+}
+
+.menu-list a:hover {
+  background-color: #444;
+  border-radius: 8px;
+}
+
+.dropdown {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #252525;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  top: 100%;
+  left: 0;
+  padding: 8px 0;
+}
+
+.dropdown-content a {
+  color: #f3e4e4;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ff1e4f;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.Main_img {
+  background: url("/public/img/Apresentações/MobFarms.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   padding: 550px;
-
 }
-.Descrição{
- text-align: center;
- justify-content: center;
- 
+.Descrição {
+  text-align: center;
+  justify-content: center;
 }
 
-.Artigo_Minérios h2{
-margin-top: 70px;
+.Artigo_Minérios {
+  padding-top: 8px;
 }
 
+.Artigo_Minérios h2 {
+  margin-top: 70px;
+}
 
-ul{
+ul {
   list-style: none;
 }
 
-
-.body_card{
+.body_card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,17 +130,16 @@ ul{
   margin-top: -70px;
 }
 
-.container{
+.container {
   width: 1150px;
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
 }
 
-.container .card{
+.container .card {
   position: relative;
   padding: 10px;
   width: 300px;
@@ -153,29 +150,28 @@ ul{
   overflow: hidden;
   transition: 0.5s;
   text-align: center;
-
 }
 
-.container .card img{
+.container .card img {
   transition: 0.5s;
   width: 100%;
 }
 
-.container.card h2{
+.container.card h2 {
   font-size: 2rem;
 }
 
-.container .card .content{
+.container .card .content {
   padding: 20px;
   text-align: center;
 }
 
-.container .card .content p{
+.container .card .content p {
   color: #252525;
   transition: 0.5s;
 }
 
-.container .card .content a{
+.container .card .content a {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
@@ -186,121 +182,116 @@ ul{
   transition: 0.5s;
   outline: none;
   margin-top: 20px;
-
 }
 
-.container .card:hover{
+.container .card:hover {
   background-color: #ff1e4f;
   color: white;
   margin-top: -30px;
   box-shadow: 2px 20px 25px purple;
   border-color: #ff1e4f;
-
 }
 
-.container .card:hover .content p{
-  color: white;  
+.container .card:hover .content p {
+  color: white;
 }
-.container .card:hover .content a{
+.container .card:hover .content a {
   color: black;
   background-color: white;
 }
 
-
-
 .rodape {
-    background: url("/public/img/img_logo_referências/footer.png");
+  background: url("/public/img/img_logo_referências/footer.png");
+}
+
+.footer-container {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 40px 16px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1184px;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 48px 16px;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 192px;
+  margin-bottom: 16px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
-  
-  .footer-container {
-    background-color: rgba(0, 0, 0, 0.9);
+
+  li {
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  a {
     color: #fff;
-    padding: 40px 16px;
+    text-decoration: none;
+    transition: color 0.3s;
   }
-  
-  .footer-content {
+}
+
+.footer-section ul li a:hover {
+  color: #ffdc00;
+}
+
+.footer-section.newsletter {
+  form {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1184px;
-    margin: 0 auto;
-    max-width: 1280px;
-    padding: 48px 16px;
-    justify-content: space-between;
+    flex-direction: column;
   }
-  
-  .footer-section {
-    flex: 1;
-    min-width: 192px;
-    margin-bottom: 16px;
-  
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-  
-    li {
-      margin-bottom: 8px;
-      display: block;
-    }
-  
-    a {
-      color: #fff;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
+  input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ffdc00;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
   }
-  
-  .footer-section ul li a:hover {
+  button {
+    padding: 10px;
+    background-color: #ff1e4f;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+}
+
+.footer-section.newsletter button:hover {
+  background-color: #ffdc00;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 8px solid #383838;
+  padding-top: 16px;
+  margin-top: 16px;
+
+  p {
+    margin: 8px 0;
+  }
+
+  a {
     color: #ffdc00;
+    text-decoration: none;
   }
-  
-  .footer-section.newsletter {
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-    input[type="email"] {
-      padding: 10px;
-      margin-bottom: 10px;
-      border: 2px solid #ffdc00;
-      background-color: transparent;
-      color: #fff;
-      outline: none;
-    }
-    button {
-      padding: 10px;
-      background-color: #ff1e4f;
-      border: none;
-      color: #fff;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-  }
-  
-  .footer-section.newsletter button:hover {
-    background-color: #ffdc00;
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    border-top: 8px solid #383838;
-    padding-top: 16px;
-    margin-top: 16px;
-  
-    p {
-      margin: 8px 0;
-    }
-  
-    a {
-      color: #ffdc00;
-      text-decoration: none;
-    }
-  }
-  
-  .footer-bottom a:hover {
-    text-decoration: underline;
-  }
-  
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
