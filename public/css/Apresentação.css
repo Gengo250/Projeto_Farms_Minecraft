@@ -113,6 +113,11 @@ header {
  
 }
 
+.Artigo_Minérios h2{
+margin-top: 70px;
+}
+
+
 ul{
   list-style: none;
 }
@@ -124,6 +129,7 @@ ul{
   align-items: center;
   min-height: 100vh;
   color: #252525;
+  margin-top: -70px;
 }
 
 .container{
@@ -152,6 +158,7 @@ ul{
 
 .container .card img{
   transition: 0.5s;
+  width: 100%;
 }
 
 .container.card h2{
@@ -192,13 +199,11 @@ ul{
 }
 
 .container .card:hover .content p{
-  color: white;
-   
+  color: white;  
 }
 .container .card:hover .content a{
   color: black;
   background-color: white;
-   
 }
 
 
