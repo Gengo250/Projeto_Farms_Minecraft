@@ -392,6 +392,10 @@ article p {
   position: relative;
   background-color: #ff1e4f;
   padding: 80px 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 
 .rodape {
