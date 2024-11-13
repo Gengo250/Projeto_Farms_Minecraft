@@ -6,9 +6,10 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: whitesmoke;
 }
-h1 {
-  font-family: "poppins";
-  font-size: small;
+h1,
+h2 {
+  font-family: "Minecraft";
+  font-weight: bold;
 }
 
 header {
