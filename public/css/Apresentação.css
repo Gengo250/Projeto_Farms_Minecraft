@@ -109,8 +109,14 @@ header {
   justify-content: center;
 }
 
+
 .Artigo_Minérios {
   padding-top: 8px;
+  font-size: 24px;
+}
+.Artigo_Minérios p{
+  margin: 0 16px;
+  padding: 20px 0;
 }
 
 .Artigo_Minérios h2 {
@@ -146,7 +152,7 @@ ul {
   background-color: #fff;
   margin: 20px;
   border: 1px solid black;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
   transition: 0.5s;
   text-align: center;
@@ -177,18 +183,22 @@ ul {
   padding: 10px 20px;
   background-color: #000;
   color: #fff;
-  border-radius: 40px;
+  border-radius: 10px;
   text-decoration: none;
   transition: 0.5s;
   outline: none;
   margin-top: 20px;
+}
+.container .card .content ul{
+list-style: none;
+padding: 0;
 }
 
 .container .card:hover {
   background-color: #ff1e4f;
   color: white;
   margin-top: -30px;
-  box-shadow: 2px 20px 25px purple;
+  box-shadow: 2px 20px 25px rgb(192, 35, 8);
   border-color: #ff1e4f;
 }
 
