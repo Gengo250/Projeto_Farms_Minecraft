@@ -5,6 +5,7 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   background-color: whitesmoke;
+  overflow-x: hidden;
 }
 h1,
 h2 {
@@ -141,9 +142,23 @@ header {
 }
 
 .allpage {
-  background-color: #252525;
+  background-color: #222222;
   margin-top: 1080px;
   padding-bottom: 80px;
+}
+
+.parallax {
+  position: absolute;
+  right: 920px;
+  max-width: 1000px;
+  max-height: 1000px;
+  padding-top: 350px;
+}
+
+.imagem_especifica img {
+  position: absolute;
+  right: 0.5px;
+  padding-top: 890px;
 }
 
 .content-section {

@@ -6,6 +6,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #252525;
   color: #fff;
+  overflow-x: hidden;
 }
 
 h1,
@@ -101,10 +102,15 @@ header {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+.Main_img {
+  padding: 0;
+  margin: 0;
+}
 .Main_img img {
-  width: 1920px;
-  height: 1080px;
+  max-width: 1920px;
+  max-height: 1080px;
+  padding: 0;
+  margin: 0;
 }
 .Descrição {
   text-align: center;
@@ -115,8 +121,11 @@ header {
   position: absolute;
   padding: 0;
   margin: 48px 0px 0px 0px;
-  left: 790px;
-  font-size: 64px;
+  left: 700px;
+  font-size: 56px;
+}
+.primeira_parte {
+  background-color: #290a10;
 }
 
 ul {
