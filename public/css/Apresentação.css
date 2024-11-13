@@ -8,6 +8,12 @@ body {
   color: #fff;
 }
 
+h1,
+h2 {
+  font-family: "Minecraft";
+  font-weight: bold;
+}
+
 header {
   grid-column: span 3;
   margin: 0;
@@ -96,31 +102,21 @@ header {
   display: block;
 }
 
-.Main_img {
-  background: url("/public/img/Apresentações/MobFarms.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  padding: 550px;
+.Main_img img {
+  width: 1920px;
+  height: 1080px;
 }
 .Descrição {
   text-align: center;
   justify-content: center;
 }
 
-
-.Artigo_Minérios {
-  padding-top: 8px;
-  font-size: 24px;
-}
-.Artigo_Minérios p{
-  margin: 0 16px;
-  padding: 20px 0;
-}
-
-.Artigo_Minérios h2 {
-  margin-top: 70px;
+.artigo_conteiner .primeira_parte h1 {
+  position: absolute;
+  padding: 0;
+  margin: 48px 0px 0px 0px;
+  left: 790px;
+  font-size: 64px;
 }
 
 ul {
@@ -189,9 +185,9 @@ ul {
   outline: none;
   margin-top: 20px;
 }
-.container .card .content ul{
-list-style: none;
-padding: 0;
+.container .card .content ul {
+  list-style: none;
+  padding: 0;
 }
 
 .container .card:hover {

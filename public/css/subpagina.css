@@ -6,6 +6,13 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #252525;
 }
+
+h1,
+h2 {
+  font-family: "Minecraft";
+  font-weight: bold;
+}
+
 .grid-conteiner {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
