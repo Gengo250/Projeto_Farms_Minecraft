@@ -4,7 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  background-color: #252525;
+  background-color: #290a10;
   color: #fff;
   overflow-x: hidden;
 }
@@ -121,11 +121,36 @@ header {
   position: absolute;
   padding: 0;
   margin: 48px 0px 0px 0px;
-  left: 700px;
+  left: 600px;
   font-size: 56px;
 }
+
+.artigo_conteiner p {
+  margin: 64px 80px;
+  font-size: 24px;
+}
+
 .primeira_parte {
-  background-color: #290a10;
+  padding-bottom: 16px;
+}
+
+.artigo_conteiner .segunda_parte img {
+  padding: 24px 0;
+  max-width: 1080px;
+  max-height: auto;
+}
+.artigo_conteiner .terceira_parte img {
+  padding: 24px 0;
+  max-width: 1080px;
+  max-height: auto;
+}
+
+.artigo_conteiner .terceira_parte {
+  padding: 16px 0;
+}
+.artigo_conteiner .segunda_parte {
+  background-color: #252525;
+  padding: 16px 0;
 }
 
 ul {
@@ -138,6 +163,7 @@ ul {
   align-items: center;
   min-height: 100vh;
   color: #252525;
+  background-color: #b81e40;
   margin-top: -70px;
 }
 
@@ -159,12 +185,12 @@ ul {
   border: 1px solid black;
   border-radius: 10px;
   overflow: hidden;
-  transition: 0.5s;
+  transition: 0.8s;
   text-align: center;
 }
 
 .container .card img {
-  transition: 0.5s;
+  transition: 0.8s;
   width: 100%;
 }
 
@@ -179,7 +205,7 @@ ul {
 
 .container .card .content p {
   color: #252525;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 
 .container .card .content a {
@@ -187,10 +213,10 @@ ul {
   display: inline-block;
   padding: 10px 20px;
   background-color: #000;
-  color: #fff;
+  color: whitesmoke;
   border-radius: 10px;
   text-decoration: none;
-  transition: 0.5s;
+  transition: 0.8s;
   outline: none;
   margin-top: 20px;
 }
@@ -200,7 +226,7 @@ ul {
 }
 
 .container .card:hover {
-  background-color: #ff1e4f;
+  background-color: #22030f;
   color: white;
   margin-top: -30px;
   box-shadow: 2px 20px 25px rgb(192, 35, 8);

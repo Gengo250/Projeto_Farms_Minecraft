@@ -149,7 +149,6 @@ header {
 
 .parallax {
   position: absolute;
-  right: 920px;
   max-width: 1000px;
   max-height: 1000px;
   padding-top: 350px;
