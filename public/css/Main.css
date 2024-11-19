@@ -237,7 +237,7 @@ header {
 }
 
 .site-info {
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 1.6;
   color: #d4d4d4;
   background-color: #252525;
@@ -388,7 +388,7 @@ article img {
   height: auto;
 }
 article h2 {
-  font-size: 120px;
+  font-size: 100px;
   text-shadow: 4px 2px 0 rgba(255, 255, 255, 0.8);
   padding: 0%;
   margin: 0%;
@@ -397,6 +397,11 @@ article h2 {
 article p {
   font-size: 24px;
   margin: 80px 500px;
+}
+article .img_farm_lego{
+  width: 40%;
+  height: auto;
+
 }
 
 .dicas-section {
