@@ -5,7 +5,6 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   background-color: #252525;
-  overflow-x: hidden;
 }
 
 h1,
@@ -22,6 +21,11 @@ h2 {
   width: calc(100% - 32px); /* Adjusted width to account for padding */
   margin: 0 auto;
   box-sizing: border-box;
+  background: url("/public/img/fundo.png"),
+    linear-gradient(to bottom, #414040, #2525253a);
+  background-size: 1890px 1080px; /* Adjust the size of the repeated logo pattern */
+  background-repeat: no-repeat;
+  background-blend-mode: overlay; /* To blend the pattern nicely with the gradient */
 }
 
 header {

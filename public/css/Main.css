@@ -263,7 +263,7 @@ header {
   inset: 0 0 0 0;
   overflow: hidden;
   opacity: 0;
-  transition: 0s;
+  transition: 2.5s;
 }
 .slider .list .item img {
   width: 100%;
@@ -318,7 +318,7 @@ header {
   animation-delay: 1s;
 }
 .slider .list .item.active p:nth-child(3) {
-  animation-duration: 1.3s;
+  animation-duration: 1s;
 }
 .arrows {
   position: absolute;
@@ -398,10 +398,9 @@ article p {
   font-size: 24px;
   margin: 80px 500px;
 }
-article .img_farm_lego{
+article .img_farm_lego {
   width: 40%;
   height: auto;
-
 }
 
 .dicas-section {
