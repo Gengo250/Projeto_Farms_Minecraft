@@ -96,7 +96,7 @@ header {
 }
 
 .dropdown-content a:hover {
-  background-color: #b81eff;
+  background-color: #3fc61d;
 }
 
 .dropdown:hover .dropdown-content {
@@ -121,7 +121,7 @@ header {
   position: absolute;
   padding: 0;
   margin: 48px 0px 0px 0px;
-  left: 600px;
+  left: 550px;
   font-size: 56px;
 }
 
@@ -163,7 +163,7 @@ ul {
   align-items: center;
   min-height: 100vh;
   color: #252525;
-  background-color: #7420c8e0;
+  background-color: #3fc61de3;
   margin-top: -70px;
 }
 
@@ -191,7 +191,8 @@ ul {
 
 .container .card img {
   transition: 0.8s;
-  width: 100%;
+  width: 300px;
+  height: 150px;
 }
 
 .container.card h2 {
@@ -226,11 +227,11 @@ ul {
 }
 
 .container .card:hover {
-  background-color: #210322;
+  background-color: #03220b;
   color: white;
   margin-top: -30px;
-  box-shadow: 2px 20px 25px rgb(192, 8, 192);
-  border-color: #ff1ea1;
+  box-shadow: 2px 20px 25px rgb(1, 255, 128);
+  border-color: #a1ff6b;
 }
 
 .container .card:hover .content p {
@@ -304,7 +305,7 @@ ul {
   }
   button {
     padding: 10px;
-    background-color: #7520c8;
+    background-color: #3fc61d;
     border: none;
     color: #fff;
     font-weight: bold;
