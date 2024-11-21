@@ -137,12 +137,12 @@ header {
 .artigo_conteiner .segunda_parte img {
   padding: 24px 0;
   max-width: 1080px;
-  max-height: auto;
+  max-height: 1080px;
 }
 .artigo_conteiner .terceira_parte img {
   padding: 24px 0;
   max-width: 1080px;
-  max-height: auto;
+  max-height: 1080px;
 }
 
 .artigo_conteiner .terceira_parte {
@@ -191,7 +191,7 @@ ul {
 
 .container .card img {
   transition: 0.8s;
-  width: 300px;
+  width: 200px;
   height: 150px;
 }
 
@@ -227,11 +227,11 @@ ul {
 }
 
 .container .card:hover {
-  background-color: #210322;
+  background-color: #221603;
   color: white;
   margin-top: -30px;
-  box-shadow: 2px 20px 25px rgb(192, 8, 192);
-  border-color: #ff1ea1;
+  box-shadow: 2px 20px 25px rgb(255, 240, 25);
+  border-color: #fff01e;
 }
 
 .container .card:hover .content p {
