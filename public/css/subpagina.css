@@ -22,7 +22,7 @@ h2 {
   margin: 0 auto;
   box-sizing: border-box;
   background: url("/public/img/fundo.png"),
-    linear-gradient(to bottom, #414040, #2525253a);
+    linear-gradient(to bottom, #353535, #2525253a);
   background-size: 1890px 1080px; /* Adjust the size of the repeated logo pattern */
   background-repeat: no-repeat;
   background-blend-mode: overlay; /* To blend the pattern nicely with the gradient */
