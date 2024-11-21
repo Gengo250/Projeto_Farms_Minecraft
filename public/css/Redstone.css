@@ -191,7 +191,8 @@ ul {
 
 .container .card img {
   transition: 0.8s;
-  width: 100%;
+  width: 290px;
+  height: 200px;
 }
 
 .container.card h2 {

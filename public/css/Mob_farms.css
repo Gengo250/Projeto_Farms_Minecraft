@@ -191,7 +191,8 @@ ul {
 
 .container .card img {
   transition: 0.8s;
-  width: 100%;
+  width: 300px;
+  height: 150px;
 }
 
 .container.card h2 {
@@ -229,8 +230,8 @@ ul {
   background-color: #210322;
   color: white;
   margin-top: -30px;
-  box-shadow: 2px 20px 25px rgb(192, 8, 192);
-  border-color: #ff1ea1;
+  box-shadow: 2px 20px 25px rgb(155, 8, 192);
+  border-color: #351eff;
 }
 
 .container .card:hover .content p {
