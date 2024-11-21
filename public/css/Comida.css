@@ -4,7 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  background-color: #29230a;
+  background-color: #2e2407;
   color: #fff;
   overflow-x: hidden;
 }
@@ -304,7 +304,7 @@ ul {
   }
   button {
     padding: 10px;
-    background-color: #7520c8;
+    background-color: #a09219;
     border: none;
     color: #fff;
     font-weight: bold;
