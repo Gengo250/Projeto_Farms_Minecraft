@@ -96,7 +96,7 @@ header {
 }
 
 .dropdown-content a:hover {
-  background-color: #b81eff;
+  background-color: #ffca1d;
 }
 
 .dropdown:hover .dropdown-content {
@@ -163,7 +163,7 @@ ul {
   align-items: center;
   min-height: 100vh;
   color: #252525;
-  background-color: #7420c8e0;
+  background-color: #ffc31fef;
   margin-top: -70px;
 }
 
@@ -191,7 +191,8 @@ ul {
 
 .container .card img {
   transition: 0.8s;
-  width: 100%;
+  width: 300px;
+  height: 150px;
 }
 
 .container.card h2 {
@@ -286,7 +287,7 @@ ul {
 }
 
 .footer-section ul li a:hover {
-  color: #ffdc00;
+  color: #ffca1d;
 }
 
 .footer-section.newsletter {
@@ -297,14 +298,14 @@ ul {
   input[type="email"] {
     padding: 10px;
     margin-bottom: 10px;
-    border: 2px solid #ffdc00;
+    border: 2px solid #ffca1d;
     background-color: transparent;
     color: #fff;
     outline: none;
   }
   button {
     padding: 10px;
-    background-color: #a09219;
+    background-color: #ffcb1f;
     border: none;
     color: #fff;
     font-weight: bold;
@@ -314,7 +315,7 @@ ul {
 }
 
 .footer-section.newsletter button:hover {
-  background-color: #ffdc00;
+  background-color: #ffca1d;
 }
 
 .footer-bottom {
@@ -328,7 +329,7 @@ ul {
   }
 
   a {
-    color: #ffdc00;
+    color: #ffca1d;
     text-decoration: none;
   }
 }
