@@ -128,7 +128,7 @@ header {
   grid-column: 1 / span 3;
   max-width: 800px;
   margin: 64px auto 16px auto; /* Added margin-top to create space from the header */
-  background-color: #ff1e4f;
+  background-color: #8d1141;
   color: #fff;
   padding: 96px;
   border-radius: 16px;
