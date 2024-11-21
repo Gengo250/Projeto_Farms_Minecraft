@@ -54,6 +54,10 @@ header {
   box-shadow: none;
 }
 
+.logo:hover {
+  width: 250px;
+}
+
 .menu-list {
   list-style: none;
   display: flex;
@@ -237,7 +241,7 @@ header {
 }
 
 .site-info {
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 1.6;
   color: #d4d4d4;
   background-color: #252525;
@@ -263,7 +267,7 @@ header {
   inset: 0 0 0 0;
   overflow: hidden;
   opacity: 0;
-  transition: 2.5s;
+  transition: 0s;
 }
 .slider .list .item img {
   width: 100%;
@@ -318,7 +322,7 @@ header {
   animation-delay: 1s;
 }
 .slider .list .item.active p:nth-child(3) {
-  animation-duration: 1s;
+  animation-duration: 1.3s;
 }
 .arrows {
   position: absolute;
@@ -388,7 +392,7 @@ article img {
   height: auto;
 }
 article h2 {
-  font-size: 100px;
+  font-size: 120px;
   text-shadow: 4px 2px 0 rgba(255, 255, 255, 0.8);
   padding: 0%;
   margin: 0%;
@@ -397,10 +401,6 @@ article h2 {
 article p {
   font-size: 24px;
   margin: 80px 500px;
-}
-article .img_farm_lego {
-  width: 40%;
-  height: auto;
 }
 
 .dicas-section {
