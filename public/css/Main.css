@@ -5,6 +5,12 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   background-color: whitesmoke;
+  overflow-x: hidden;
+}
+h1,
+h2 {
+  font-family: "Minecraft";
+  font-weight: bold;
 }
 
 header {
@@ -136,9 +142,22 @@ header {
 }
 
 .allpage {
-  background-color: #252525;
+  background-color: #222222;
   margin-top: 1080px;
   padding-bottom: 80px;
+}
+
+.parallax {
+  position: absolute;
+  max-width: 1000px;
+  max-height: 1000px;
+  padding-top: 350px;
+}
+
+.imagem_especifica img {
+  position: absolute;
+  right: 0.5px;
+  padding-top: 890px;
 }
 
 .content-section {
@@ -218,7 +237,7 @@ header {
 }
 
 .site-info {
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 1.6;
   color: #d4d4d4;
   background-color: #252525;
@@ -234,12 +253,17 @@ header {
   position: relative;
   color: white;
 }
+.slider .thumbnail .item .content {
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 black;
+}
 .slider .list .item {
   position: absolute;
   inset: 0 0 0 0;
   overflow: hidden;
   opacity: 0;
-  transition: 0.5s;
+  transition: 2.5s;
 }
 .slider .list .item img {
   width: 100%;
@@ -288,13 +312,13 @@ header {
   transform: translateY(30px);
   filter: blur(20px);
   opacity: 0;
-  animation: showContent 0.5s 0.7s ease-in-out 1 forwards;
+  animation: showContent 0.8s 0.9s ease-in-out 1 forwards;
 }
 .slider .list .item.active h2 {
   animation-delay: 1s;
 }
 .slider .list .item.active p:nth-child(3) {
-  animation-duration: 1.3s;
+  animation-duration: 1s;
 }
 .arrows {
   position: absolute;
@@ -322,7 +346,7 @@ header {
   bottom: 50px;
   z-index: 11;
   display: flex;
-  gap: 10px;
+  gap: 20px;
   width: 100%;
   height: 250px;
   padding: 0 50px;
@@ -353,17 +377,6 @@ header {
   position: absolute;
   inset: auto 10px 10px 10px;
 }
-@media screen and (max-width: 678px) {
-  .thumbnail {
-    justify-content: start;
-  }
-  .slider .list .item .content h2 {
-    font-size: 60px;
-  }
-  .arrows {
-    top: 10%;
-  }
-}
 
 article {
   background-color: whitesmoke;
@@ -375,15 +388,123 @@ article img {
   height: auto;
 }
 article h2 {
-  font-size: 120px;
+  font-size: 100px;
   text-shadow: 4px 2px 0 rgba(255, 255, 255, 0.8);
   padding: 0%;
   margin: 0%;
 }
 
 article p {
-  font-size: 16px;
-  margin: 80px;
+  font-size: 24px;
+  margin: 80px 500px;
+}
+article .img_farm_lego {
+  width: 40%;
+  height: auto;
+}
+
+.dicas-section {
+  display: flex;
+  gap: 10px;
+  padding: 40px;
+  background-color: #181818;
+  color: #ffffff;
+}
+
+.dicas-main {
+  flex: 2;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.dicas-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.dica-card {
+  background-color: #292929;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dica-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.dica-content {
+  padding: 15px;
+}
+
+.dica-card h3 {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.dica-card:hover {
+  transform: scale(1.05);
+}
+
+.ver-mais {
+  display: inline-block;
+  margin-top: 20px;
+  color: #ff9800;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.ver-mais:hover {
+  color: #ffc107;
+}
+
+.dicas-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.side-dica {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background-color: #292929;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 15px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.side-dica img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.side-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.side-dica h4 {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.side-dica:hover {
+  background-color: #333;
 }
 
 .rodape {
@@ -480,4 +601,16 @@ article p {
 
 .footer-bottom a:hover {
   text-decoration: underline;
+}
+/*Media Responsive*/
+@media screen and (max-width: 678px) {
+  .thumbnail {
+    justify-content: start;
+  }
+  .slider .list .item .content h2 {
+    font-size: 60px;
+  }
+  .arrows {
+    top: 10%;
+  }
 }
