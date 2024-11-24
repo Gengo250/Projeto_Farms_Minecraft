@@ -230,6 +230,20 @@ header {
   border-top: 4px solid #444;
 }
 
+.tab:hover {
+  transform: translateY(
+    -3px
+  ); /* Levanta levemente a logo quando o mouse passa por cima */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra suave para o efeito 3D */
+}
+
+.tab:active {
+  transform: translateY(
+    3px
+  ); /* Empurra a logo para baixo quando clicada, imitando o "afundar" */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* A sombra diminui para mostrar o efeito de "afundar" */
+}
+
 .tab-content {
   display: none;
 }
@@ -432,10 +446,16 @@ article h2 {
 article p {
   font-size: 24px;
   margin: 80px 500px;
+  text-align: start;
 }
-article .img_farm_lego {
+
+article p::first-letter {
+  margin-left: 50px;
+}
+article .engimg {
   width: 40%;
   height: auto;
+  box-shadow: 5px 5px 5px black;
 }
 
 /* Fundo da seção */
