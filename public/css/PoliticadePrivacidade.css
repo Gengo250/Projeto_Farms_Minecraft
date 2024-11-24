@@ -150,85 +150,21 @@ header {
 
 /*parte principal do site*/
 .principal {
-  grid-column: 2;
+  display: grid;
+  margin-top: 150px;
+  grid-template-columns: 1fr 3fr 1fr;
   column-gap: 16px; /* Adjusted to multiple of 8 */
   text-align: center;
   color: #fff;
-}
-
-.noticia {
-  grid-column: 1 / span 3;
-  max-width: 800px;
-  margin: 64px auto 16px auto; /* Added margin-top to create space from the header */
-  background-color: #8d1141;
-  color: #fff;
-  padding: 96px;
-  border-radius: 16px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.img-container {
-  background-color: #ffdc00;
-  padding: 8px;
-  border-radius: 8px; /* Adjusted */
-  overflow: hidden;
-  max-width: 100%;
-  display: flex;
-  margin: 16px; /* Adjusted */
-  justify-content: center;
-  align-items: center;
-}
-
-img {
-  width: 100%; /* Ocupar 100% da largura disponível */
-  height: auto; /* Ajustar altura proporcionalmente */
-  max-height: 200%;
-  border-radius: 15px;
-  object-fit: contain; /* Garante que a imagem se encaixe sem cortar */
-  margin-bottom: 20px;
-  box-shadow: 1px 1px 10px 10px black;
-}
-
-.categoria {
-  background-color: #000;
-  color: #ffdc00; /* Texto amarelo */
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-weight: bold;
 }
 
 h1 {
   margin-top: 10px;
 }
 
-.autor-data {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.9em;
-  color: #ffdc00;
-}
-
-.autor-data strong {
-  color: #fff;
-}
-
-.redacao iframe {
-  align-self: center;
-  margin: 20px;
-  padding: 10px;
-  display: block; /* Torna o elemento um bloco completo, centralizando melhor */
-  margin: 20px auto; /* Centraliza horizontalmente */
-  max-width: 90%; /* Limita a largura para não ocupar toda a tela */
-  width: 560px; /* Define uma largura fixa para iframe e imagens */
-  height: 315px; /* Define a altura fixa para combinar com a largura */
-  border-radius: 10px; /* Bordas arredondadas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para destaque */
-  object-fit: cover; /* Garante que as imagens não sejam esticadas */
-}
-
 .redacao {
   text-align: start;
+  grid-column: 2;
 
   ol {
     list-style: none; /* Remove as bolinhas do <ul> */

@@ -1,4 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "YourCustomFont";
+  src: url("/public/fonte/minecraft_font.ttf2") format("ttf"),
+    url("/public/fonte/minecraft_font.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -52,6 +65,25 @@ header {
 .logo {
   height: 50px;
   box-shadow: none;
+}
+
+.logo-link {
+  display: inline-block; /* Garante que o efeito seja aplicado ao link que contém a logo */
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+.logo-link:hover {
+  transform: translateY(
+    -3px
+  ); /* Levanta levemente a logo quando o mouse passa por cima */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra suave para o efeito 3D */
+}
+
+.logo-link:active {
+  transform: translateY(
+    3px
+  ); /* Empurra a logo para baixo quando clicada, imitando o "afundar" */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* A sombra diminui para mostrar o efeito de "afundar" */
 }
 
 .menu-list {
@@ -127,18 +159,21 @@ header {
   margin-top: 32px;
 }
 
-.frase .cta a {
+.scroll-btn {
+  padding: 10px 40px;
   background-color: #ff1e4f;
-  color: #fff;
-  padding: 16px 32px;
-  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  border: none;
   border-radius: 8px;
-  text-decoration: none;
-  transition: background-color 0.3s;
+  cursor: pointer;
+  font-weight: bold;
 }
-
-.frase .cta a:hover {
-  background-color: #ff3b62;
+.scroll-btn:active {
+  transform: translateY(
+    3px
+  ); /* Empurra a logo para baixo quando clicada, imitando o "afundar" */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* A sombra diminui para mostrar o efeito de "afundar" */
 }
 
 .allpage {
@@ -403,91 +438,104 @@ article .img_farm_lego {
   height: auto;
 }
 
+/* Fundo da seção */
 .dicas-section {
   display: flex;
-  gap: 10px;
+  gap: 30px; /* Maior espaço entre o conteúdo principal e o lateral */
   padding: 40px;
-  background-color: #181818;
+  background-color: #292929; /* Cor roxa vibrante */
   color: #ffffff;
 }
 
+/* Área principal das dicas */
 .dicas-main {
   flex: 2;
 }
 
+/* Título da seção */
 .section-title {
-  font-size: 1.8rem;
-  margin-bottom: 25px;
+  font-size: 2rem; /* Fonte maior para dar destaque */
   font-weight: bold;
+  text-transform: uppercase; /* Para deixar o título mais chamativo */
+  margin-bottom: 25px;
 }
 
+/* Cards principais das dicas */
 .dicas-cards {
   display: flex;
-  gap: 20px;
+  gap: 25px; /* Mais espaço entre os cards */
 }
 
 .dica-card {
-  background-color: #292929;
+  background-color: #000000; /* Fundo preto para contraste */
+  border: 4px solid #ffd700; /* Borda dourada vibrante */
   border-radius: 12px;
   overflow: hidden;
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
 }
 
 .dica-card img {
   width: 100%;
-  height: 140px;
+  height: 160px; /* Imagem mais alta para destacar */
   object-fit: cover;
 }
 
 .dica-content {
-  padding: 15px;
+  padding: 20px;
 }
 
 .dica-card h3 {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 1.4;
+  font-weight: bold;
+  text-transform: uppercase; /* Deixar o título dos cards em caixa alta */
 }
 
+/* Efeito ao passar o mouse nos cards */
 .dica-card:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px) scale(1.05); /* Aumenta e levanta o card */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8); /* Sombra mais pronunciada */
 }
 
+/* Link "Ver Mais" */
 .ver-mais {
   display: inline-block;
   margin-top: 20px;
-  color: #ff9800;
+  color: #ffea00; /* Cor amarelo vivo */
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .ver-mais:hover {
-  color: #ffc107;
+  color: #ffffff; /* Fica branco ao passar o mouse */
 }
 
+/* Cards laterais das dicas */
 .dicas-side {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px; /* Espaço maior entre os cards laterais */
 }
 
 .side-dica {
   display: flex;
   align-items: flex-start;
-  gap: 15px;
-  background-color: #292929;
+  gap: 20px;
+  background-color: #000000; /* Fundo preto para destacar */
+  border: 3px solid #ff9800; /* Borda laranja */
   border-radius: 12px;
   overflow: hidden;
-  padding: 15px;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .side-dica img {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px; /* Imagem quadrada maior */
   object-fit: cover;
   border-radius: 8px;
 }
@@ -499,12 +547,16 @@ article .img_farm_lego {
 }
 
 .side-dica h4 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.4;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
+/* Efeito ao passar o mouse nos cards laterais */
 .side-dica:hover {
-  background-color: #333;
+  transform: translateY(-5px); /* Levanta o card */
+  background-color: #1e1e1e; /* Muda a cor de fundo ao passar o mouse */
 }
 
 .rodape {
