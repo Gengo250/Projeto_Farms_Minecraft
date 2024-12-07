@@ -1,150 +1,172 @@
+<!-- views/index.ejs -->
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= page.title %></title>
-  <link rel="stylesheet" href="/css/subpagina.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap">
-</head>
-<body>
-  <div class="grid-conteiner">
-    <header>
-      <nav class="menu-header">
-        <div class="logo-container">
-          <a href="Main.html"><img class="logo" src="/img/img_logo_referências/logo.png" alt="logo"></a>
-        </div>
-        <ul class="menu-list">
-          <li><a href="/">Redstone</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropbtn">Minérios ▼</a>
-            <div class="dropdown-content">
-              <a href="#">Ferro</a>
-              <a href="#">Ouro</a>
-              <a href="#">Esmeralda</a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropbtn">Comida ▼</a>
-            <div class="dropdown-content">
-              <a href="#">Carne de porco</a>
-              <a href="/farm-de-comida">Batata</a>
-              <a href="#">Melância</a>
-              <a href="#">Abóbora</a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropbtn">Mob-Farms ▼</a>
-            <div class="dropdown-content">
-              <a href="#">Overworld</a>
-              <a href="#">Slime</a>
-              <a href="#">The End</a>
-              <a href="#">Nether</a>
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= page.title %></title>
+    <link rel="stylesheet" href="/css/Main.css" />
+  </head>
+  <body>
+    <%- include('partials/header') %>
 
-    <div class="noticia">
-      <div class="img-conteiner">
-        <img src="<%= page.mainImage %>" alt="">
+    <!-- Seção do Wallpaper -->
+    <% if (page.wallpaper) { %>
+      <div class="wallpaper">
+        <img src="<%= page.wallpaper %>" alt="Wallpaper">
       </div>
-      <div class="conteudo">
-        <span class="categoria"><%= page.category %></span>
-        <h1><%= page.title %></h1>
-        <p><%= page.summary %></p>
-        <div class="autor-data">
-          <span>Por <strong><%= page.author %></strong></span>
-          <span><%= page.date %></span>
+    <% } %>
+
+    <div class="frase">
+      <h1 class="h1">Automatizar. Criar.</h1>
+      <h1>Farmar!</h1>
+      <div class="cta">
+        <button class="scroll-btn" onclick="scrollToSection()">
+          <h2>Farm mais fundo</h2>
+        </button>
+        <div class="parallax">
+          <img src="/img/parallax.png" alt="">
         </div>
+      </div>
+
+      <div class="imagem_especifica">
+        <img src="/img/bagulhos 3.png" alt="">
       </div>
     </div>
 
-    <article class="principal">
-      <div class="redacao">
-        <ol>
-          <% page.content.forEach(section => { %>
-            <% if (section.type === 'heading') { %>
-              <li><h<%= section.level %>><%= section.text %></h<%= section.level %>></li>
-            <% } else if (section.type === 'paragraph') { %>
-              <li><p><%= section.text %></p></li>
-            <% } else if (section.type === 'image') { %>
-              <li><img class="article-img" src="<%= section.src %>" alt="<%= section.alt %>"></li>
-            <% } else if (section.type === 'list') { %>
-              <% section.items.forEach(item => { %>
-                <li><p><%= item %></p></li>
+    <section class="allpage">
+      <section class="content-section">
+        <h1>INFORMATIVO</h1>
+        <div class="tabs">
+          <button class="tab" data-tab="team" onclick="switchTab('team')">
+            <h2>Equipe</h2>
+          </button>
+          <button class="tab" data-tab="site" onclick="switchTab('site')">
+            <h2>Site</h2>
+          </button>
+        </div>
+
+        <div id="team" class="tab-content">
+          <div class="team-container">
+            <% if (page.team && page.team.length > 0) { %>
+              <% page.team.forEach(member => { %>
+                <div class="team-member">
+                  <img src="<%= member.imgSrc %>" alt="<%= member.imgAlt %>" />
+                  <div>
+                    <h2><%= member.name %></h2>
+                    <p><%= member.description %></p>
+                  </div>
+                </div>
               <% }) %>
+            <% } else { %>
+              <p>Nenhum membro da equipe encontrado.</p>
             <% } %>
-          <% }) %>
-        </ol>
-
-        <% page.content.forEach(section => { %>
-          <% if (section.type === 'video') { %>
-            <iframe width="560" height="315" src="<%= section.src %>" frameborder="0" allowfullscreen></iframe>
-          <% } %>
-        <% }) %>
-      </div>
-    </article>
-
-    <aside class="sidebar">
-      <h2>ϟ As Mais Lidas da Semana</h2>
-      <% page.relatedArticles.forEach(article => { %>
-        <div class="noticia-relacionada">
-          <div class="noticia-conteudo">
-            <img class="noticia-img" src="<%= article.image %>" alt="<%= article.title %>">
-            <div class="noticia-texto">
-              <span class="categoria"><%= article.category %></span>
-              <a href="<%= article.link %>"><h3><%= article.title %></h3></a>
-              <p>Por <%= article.author %></p>
-            </div>
           </div>
         </div>
-      <% }) %>
-    </aside>
-  </div>
 
-  <div class="rodape">
-    <footer class="footer-container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>INSTITUCIONAL</h3>
-          <ul>
-            <% page.footer.institucional.forEach(link => { %>
-              <li><a href="<%= link.link %>"><%= link.text %></a></li>
-            <% }) %>
-          </ul>
+        <div id="site" class="tab-content">
+          <div class="site-info">
+            <p><%= page.siteInfo %></p>
+          </div>
         </div>
-        <div class="footer-section">
-          <h3>CANAIS DOS ENGENHEIROS</h3>
-          <ul>
-            <% page.footer.canaisDosEngenheiros.forEach(link => { %>
-              <li><a href="<%= link.link %>"><%= link.text %></a></li>
-            <% }) %>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h3>CONHEÇA O GRUPO</h3>
-          <ul>
-            <% page.footer.conhecaOGrupo.forEach(link => { %>
-              <li><a href="<%= link.link %>"><%= link.text %></a></li>
-            <% }) %>
-          </ul>
-        </div>
-        <div class="footer-section newsletter">
-          <h3><%= page.footer.newsletter.title %></h3>
-          <form action="#">
-            <input type="email" placeholder="<%= page.footer.newsletter.placeholder %>" required>
-            <button type="submit"><%= page.footer.newsletter.buttonText %></button>
-          </form>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p><%= page.footerBottom.text %></p>
-        <p><%= page.footerBottom.developedBy.text %> <a href="<%= page.footerBottom.developedBy.link %>">CREA-MC</a></p>
-      </div>
-    </footer>
-  </div>
+      </section>
+    </section>
 
-</body>
+    <!-- Slider -->
+    <div class="slider" id="slideimg">
+      <!-- List Items -->
+      <div class="list">
+        <% if (page.slider && page.slider.length > 0) { %>
+          <% page.slider.forEach((slide, index) => { %>
+            <div class="item <%= index === 0 ? 'active' : '' %>">
+              <img src="<%= slide.imgSrc %>" alt="<%= slide.imgAlt %>">
+              <div class="content">
+                <p><%= slide.tag %></p>
+                <h2><%= slide.title %></h2>
+                <p><%= slide.description %></p>
+              </div>
+            </div>
+          <% }) %>
+        <% } else { %>
+          <p>Nenhum slide encontrado.</p>
+        <% } %>
+      </div>
+      <!-- Button Arrows -->
+      <div class="arrows">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+      <!-- Thumbnail -->
+      <div class="thumbnail">
+        <% if (page.slider && page.slider.length > 0) { %>
+          <% page.slider.forEach((slide, index) => { %>
+            <div class="item <%= index === 0 ? 'active' : '' %>">
+              <img src="<%= slide.imgSrc %>" alt="<%= slide.imgAlt %>">
+              <div class="content">
+                <%= slide.title %>
+              </div>
+            </div>
+          <% }) %>
+        <% } else { %>
+          <p>Nenhum thumbnail encontrado.</p>
+        <% } %>
+      </div>
+    </div>
+
+    <article>
+      <img src="/img/bagulhos 2.png" alt="">
+      <h2>Minefarms</h2>
+      <p>
+        A engenharia de redstone e as farms são pilares essenciais no Minecraft, permitindo automação e otimização de recursos. 
+        Com redstone, jogadores podem criar circuitos complexos e sistemas que simplificam tarefas, desde portas automáticas até mecanismos avançados. 
+        As farms utilizam essa tecnologia para coletar itens de forma contínua, como alimentos, minerais e até drops de mobs, acelerando o progresso e tornando o jogo mais estratégico. 
+        No MineFarms, exploramos e ensinamos as melhores técnicas de construção de farms, ajudando jogadores a maximizar eficiência e recursos para expandir seus mundos com criatividade e facilidade.
+      </p>
+      
+      <img src="/img/Apresentações/Captura de tela 2024-11-24 120619.png" class="engimg" alt="">
+    </article>
+
+    <div class="dicas-section">
+      <div class="dicas-main">
+        <h2 class="section-title">Dicas</h2>
+        <div class="dicas-cards">
+          <% if (page.dicas && page.dicas.length > 0) { %>
+            <% page.dicas.forEach(dica => { %>
+              <div class="dica-card">
+                <img src="<%= dica.imgSrc %>" alt="<%= dica.imgAlt %>">
+                <div class="dica-content">
+                  <h3><%= dica.title %></h3>
+                </div>
+              </div>
+            <% }) %>
+          <% } else { %>
+            <p>Nenhuma dica encontrada.</p>
+          <% } %>
+        </div>
+        <a href="#" class="ver-mais">Ver mais &rarr;</a>
+      </div>
+      <div class="dicas-side">
+        <% if (page.sideDicas && page.sideDicas.length > 0) { %>
+          <% page.sideDicas.forEach(sideDica => { %>
+            <div class="side-dica">
+              <img src="<%= sideDica.imgSrc %>" alt="<%= sideDica.imgAlt %>">
+              <div class="side-content">
+                <h4><%= sideDica.title %></h4>
+              </div>
+            </div>
+          <% }) %>
+        <% } else { %>
+          <p>Nenhuma dica lateral encontrada.</p>
+        <% } %>
+      </div>
+    </div>
+
+    <%- include('partials/footer') %>
+
+    <!-- Scripts -->
+    <script src="/js/Tabs.js"></script>
+    <script src="/js/Slide.js"></script>
+    <script src="/js/teste.js"></script>
+    <script src="/js/botaomainpage.js"></script>
+  </body>
 </html>

@@ -1,0 +1,56 @@
+<!-- views/partials/footer.ejs -->
+<footer class="footer-container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>INSTITUCIONAL</h3>
+        <ul>
+          <li><a href="#">Quem Somos</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="/PoliticadePrivacidade">Política de Privacidade</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>CANAIS DOS ENGENHEIROS</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/@viniccius13">Viníccius 13</a></li>
+          <li><a href="https://www.youtube.com/@rodrigoruiz2">RodriR ARG</a></li>
+          <li><a href="https://www.youtube.com/@xisumavoid">Xisumavoid</a></li>
+          <li><a href="https://www.youtube.com/@ThatMumboJumbo">Mumbo Jumbo</a></li>
+          <li><a href="https://www.youtube.com/@ilmango">ilmango</a></li>
+          <li><a href="https://www.youtube.com/@TangoTekLP">Tango Tek</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>CONHEÇA O GRUPO</h3>
+        <ul>
+          <li><a href="https://aventuraautomatica.fandom.com/pt-br/wiki/Redstone_Gang_(série)">Redstone Gang</a></li>
+          <li><a href="https://voidcraft.netlify.app">Voidcraft</a></li>
+          <li><a href="https://www.gsuplementos.com.br/?srsltid=AfmBOordljV2JW9nmyEdZOh5eJhuHlsh38m_yR_-8ih2Rj3AYTqVYXse">Growth</a></li>
+          <li><a href="https://www.youtube.com/@SpaceToday">Space Today</a></li>
+          <li><a href="https://hermitcraft.com">Hermitcraft</a></li>
+          <li><a href="https://www.youtube.com/@renatocariani">Canal Renato Cariani</a></li>
+          <li><a href="https://www.youtube.com/@EIMINE">EI MINE</a></li>
+        </ul>
+      </div>
+      <div class="footer-section newsletter">
+        <h3>NOS MANDE UMA MENSAGEM</h3>
+        <form action="/subscribe" method="POST">
+          <input
+            type="email"
+            name="email"
+            placeholder="Qual é o ra do Miguel?"
+            required
+          />
+          <button type="submit">→</button>
+        </form>
+        <% if (typeof newsletterMessage !== 'undefined') { %>
+          <p class="newsletter-message"><%= newsletterMessage %></p>
+        <% } %>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Minefarms. Todos os direitos reservados.</p>
+      <p>Desenvolvido por <a href="#">CREA-MC</a></p>
+    </div>
+  </footer>
+  
