@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,12 +10,12 @@
     <header>
       <nav class="menu-header">
         <div class="logo-container">
-          <a href="Main.html"><img class="logo" src="/public/img/img_logo_referências/logo.png" alt="logo"></a> 
+          <a href="Main.html" class="logo-link"><img class="logo" src="/public/img/img_logo_referências/logo.png" alt="logo"></a> 
         </div>
         <ul class="menu-list">
           <li><a href="/public/html/Redstone.html">Redstone</a></li>
           <li class="dropdown">
-            <a href="#" class="dropbtn">Minérios ▼</a>
+            <a href="/public/html/Minérios.html" class="dropbtn">Minérios ▼</a>
             <div class="dropdown-content">
               <a href="/public/html/Minérios.html">Ferro</a>
               <a href="/public/html/Minérios.html">Ouro</a>
@@ -23,18 +23,17 @@
             </div>
           </li>
           <li class="dropdown">
-            <a href="#" class="dropbtn">Comida ▼</a>
+            <a href="/public/html/Comida.html" class="dropbtn">Comida ▼</a>
             <div class="dropdown-content">
               <a href="/public/html/Comida.html">Carne de porco</a>
               <a href="/public/html/Comida.html">Batata</a>
-              <a href="/public/html/Comida.html">Melância</a>
+              <a href="/public/html/Comida.html">Frutas</a>
             </div>
           </li>
           <li class="dropdown">
-            <a href="#" class="dropbtn">Mob-Farms ▼</a>
+            <a href="/public/html/Mob_farms.html" class="dropbtn">Mob-Farms ▼</a>
             <div class="dropdown-content">
               <a href="/public/html/Mob_farms.html">Overword</a>
-              <a href="/public/html/Mob_farms.html">Slime</a>
               <a href="/public/html/Mob_farms.html">The end</a>
               <a href="/public/html/Mob_farms.html">Nether</a>
             </div>
@@ -46,7 +45,7 @@
       <h1 class="h1">Automatizar. Criar.</h1>
       <h1>Farmar!</h1>
       <div class="cta">
-        <a href="#">Farm mais fundo</a>
+        <button class="scroll-btn" onclick="scrollToSection()"><h2>Farm mais fundo</h2></button>
         <div class="parallax">
           <img src="/public/img/parallax.png" alt="">
         </div>
@@ -162,7 +161,7 @@
 
 <!-- slider -->
 
-<div class="slider">
+<div class="slider" id="slideimg">
   <!-- list Items -->
   <div class="list">
       <div class="item active">
@@ -247,6 +246,9 @@ As comidas no Minecraft são essenciais para restaurar a barra de fome e regener
     Com redstone, jogadores podem criar circuitos complexos e sistemas que simplificam tarefas, desde portas automáticas até mecanismos avançados. 
     As farms utilizam essa tecnologia para coletar itens de forma contínua, como alimentos, minerais e até drops de mobs, acelerando o progresso e tornando o jogo mais estratégico. 
     No MineFarms, exploramos e ensinamos as melhores técnicas de construção de farms, ajudando jogadores a maximizar eficiência e recursos para expandir seus mundos com criatividade e facilidade.</p>
+    
+    <img src="/public/img/Apresentações/Captura de tela 2024-11-24 120619.png" class="engimg" alt="">
+
   </article>
 
   <div class="dicas-section">
@@ -300,7 +302,7 @@ As comidas no Minecraft são essenciais para restaurar a barra de fome e regener
             <ul>
               <li><a href="#">Quem Somos</a></li>
               <li><a href="#">Contato</a></li>
-              <li><a href="#">Política de Privacidade</a></li>
+              <li><a href="PoliticadePrivacidade.html">Política de Privacidade</a></li>
             </ul>
           </div>
           <div class="footer-section">
@@ -376,6 +378,7 @@ As comidas no Minecraft são essenciais para restaurar a barra de fome e regener
   <script src="/public/js/Tabs.js"></script>
   <script src="/public/js/Slide.js"></script>
   <script src="/public/js/teste.js"></script>
+  <script src="/public/js/botaomainpage.js"></script>
 
 
 </html>
