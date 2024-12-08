@@ -2,9 +2,12 @@
 
 @font-face {
   font-family: "Minecraft";
-  src: url("/public/fonte/minecraft_font.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
+  src: url("/public/fonte/minecraft_font.eot");
+  src: url("/public/fonte/minecraft_font.eot") format("embedded-opentype"),
+    url("/public/fonte/minecraft_font.woff2") format("woff2"),
+    url("/public/fonte/minecraft_font.woff") format("woff"),
+    url("/public/fonte/minecraft_font.ttf") format("truetype"),
+    url("/public/fonte/minecraft_font.svg#minecraft_font") format("svg");
 }
 * {
   box-sizing: border-box;
@@ -15,7 +18,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  background-color: #2e2407;
+  background-color: #290a10;
   color: #fff;
   overflow-x: hidden;
 }
@@ -126,7 +129,7 @@ header {
 }
 
 .dropdown-content a:hover {
-  background-color: #ffca1d;
+  background-color: #ff1e4f;
 }
 
 .dropdown:hover .dropdown-content {
@@ -167,12 +170,12 @@ header {
 .artigo_conteiner .segunda_parte img {
   padding: 24px 0;
   max-width: 1080px;
-  max-height: 1080px;
+  max-height: auto;
 }
 .artigo_conteiner .terceira_parte img {
   padding: 24px 0;
   max-width: 1080px;
-  max-height: 1080px;
+  max-height: auto;
 }
 
 .artigo_conteiner .terceira_parte {
@@ -192,8 +195,8 @@ ul {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  color: white;
-  background-color: #ffc31fef;
+  color: #ffffff;
+  background-color: #b81e40;
   margin-top: -70px;
 }
 
@@ -211,7 +214,7 @@ ul {
   padding: 10px;
   width: 320px;
   height: 700px;
-  background-color: #221603;
+  background-color: #22030f;
   margin: 20px;
   border: 1px solid black;
   border-radius: 10px;
@@ -226,6 +229,7 @@ ul {
   width: 300px;
   height: 200px;
 }
+
 .container.card h2 {
   font-size: 2rem;
 }
@@ -236,7 +240,7 @@ ul {
 }
 
 .container .card .content p {
-  color: white;
+  color: #ffffff;
   transition: 0.8s;
 }
 
@@ -259,10 +263,10 @@ ul {
 
 .container .card:hover {
   background-color: white;
-  color: black;
+  color: rgb(0, 0, 0);
   margin-top: -30px;
-  box-shadow: 2px 20px 25px rgb(255, 240, 25);
-  border-color: #fff01e;
+  box-shadow: 2px 20px 25px rgb(192, 35, 8);
+  border-color: #ff1e4f;
 }
 
 .container .card:hover .content p {
@@ -318,7 +322,7 @@ ul {
 }
 
 .footer-section ul li a:hover {
-  color: #ffca1d;
+  color: #ffdc00;
 }
 
 .footer-section.newsletter {
@@ -329,14 +333,14 @@ ul {
   input[type="email"] {
     padding: 10px;
     margin-bottom: 10px;
-    border: 2px solid #ffca1d;
+    border: 2px solid #ffdc00;
     background-color: transparent;
     color: #fff;
     outline: none;
   }
   button {
     padding: 10px;
-    background-color: #ffcb1f;
+    background-color: #ff1e4f;
     border: none;
     color: #fff;
     font-weight: bold;
@@ -346,7 +350,7 @@ ul {
 }
 
 .footer-section.newsletter button:hover {
-  background-color: #ffca1d;
+  background-color: #ffdc00;
 }
 
 .footer-bottom {
@@ -360,7 +364,7 @@ ul {
   }
 
   a {
-    color: #ffca1d;
+    color: #ffdc00;
     text-decoration: none;
   }
 }

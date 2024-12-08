@@ -1,7 +1,0 @@
-Luccão:
-
-Makoto:
-
-Miguel:
-
-Renato:

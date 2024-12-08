@@ -2,9 +2,12 @@
 
 @font-face {
   font-family: "Minecraft";
-  src: url("/public/fonte/minecraft_font.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
+  src: url("/public/fonte/minecraft_font.eot");
+  src: url("/public/fonte/minecraft_font.eot") format("embedded-opentype"),
+    url("/public/fonte/minecraft_font.woff2") format("woff2"),
+    url("/public/fonte/minecraft_font.woff") format("woff"),
+    url("/public/fonte/minecraft_font.ttf") format("truetype"),
+    url("/public/fonte/minecraft_font.svg#minecraft_font") format("svg");
 }
 
 * {
@@ -181,7 +184,6 @@ header {
 img {
   width: 100%; /* Ocupar 100% da largura disponível */
   height: auto; /* Ajustar altura proporcionalmente */
-  max-height: 200%;
   border-radius: 15px;
   object-fit: contain; /* Garante que a imagem se encaixe sem cortar */
   margin-bottom: 20px;
@@ -238,12 +240,11 @@ h1 {
 .article-img {
   display: block; /* Torna o elemento um bloco completo, centralizando melhor */
   margin: 20px auto; /* Centraliza horizontalmente */
-  max-width: 90%; /* Limita a largura para não ocupar toda a tela */
-  width: 560px; /* Define uma largura fixa para iframe e imagens */
-  height: 315px; /* Define a altura fixa para combinar com a largura */
+  width: 70%; /* Define uma largura fixa para iframe e imagens */
+  height: 70%; /* Define a altura fixa para combinar com a largura */
   border-radius: 10px; /* Bordas arredondadas */
   box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.8); /* Adiciona uma sombra para destaque */
-  object-fit: cover; /* Garante que as imagens não sejam esticadas */
+  /* Garante que as imagens não sejam esticadas */
 }
 
 .sidebar {
@@ -325,7 +326,7 @@ h1 {
 }
 
 .rodape {
-  background: url("/img/img_logo_referências/footer.png");
+  background: url("/public/img/img_logo_referências/footer.png");
 }
 
 .footer-container {

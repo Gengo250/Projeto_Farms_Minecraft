@@ -2,9 +2,12 @@
 
 @font-face {
   font-family: "Minecraft";
-  src: url("/public/fonte/minecraft_font.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
+  src: url("/public/fonte/minecraft_font.eot");
+  src: url("/public/fonte/minecraft_font.eot") format("embedded-opentype"),
+    url("/public/fonte/minecraft_font.woff2") format("woff2"),
+    url("/public/fonte/minecraft_font.woff") format("woff"),
+    url("/public/fonte/minecraft_font.ttf") format("truetype"),
+    url("/public/fonte/minecraft_font.svg#minecraft_font") format("svg");
 }
 
 * {
@@ -166,6 +169,7 @@ h1 {
   grid-column: 2;
 
   ol {
+    margin-top: 5000px;
     list-style: none; /* Remove as bolinhas do <ul> */
     border-top: 4px ridge rgba(0, 0, 0, 0.1);
   }
@@ -261,7 +265,7 @@ h1 {
 }
 
 .rodape {
-  background: url("/img/img_logo_referências/footer.png");
+  background: url("/public/img/img_logo_referências/footer.png");
 }
 
 .footer-container {
