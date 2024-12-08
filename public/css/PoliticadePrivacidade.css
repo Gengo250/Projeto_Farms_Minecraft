@@ -2,9 +2,12 @@
 
 @font-face {
   font-family: "Minecraft";
-  src: url("/public/fonte/minecraft_font.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
+  src: url("/public/fonte/minecraft_font.eot");
+  src: url("/public/fonte/minecraft_font.eot") format("embedded-opentype"),
+    url("/public/fonte/minecraft_font.woff2") format("woff2"),
+    url("/public/fonte/minecraft_font.woff") format("woff"),
+    url("/public/fonte/minecraft_font.ttf") format("truetype"),
+    url("/public/fonte/minecraft_font.svg#minecraft_font") format("svg");
 }
 
 * {
