@@ -4,7 +4,7 @@ Link da documentação de todo o projeto: https://www.notion.so/Farms-in-html-46
 
 Bem vindo ao projeto MineFarms, a wiki das farms mais fundamentais do minecraft ⛏️
 
-No nosso site distribuimos quatro tópicos para abordar as farms mais essenciais que todo jogador de minecraft deveria saber: minérios, comida, mob-farms e redstone no geral.
+No nosso site distribuimos quatro tópicos para abordar as farms mais essenciais que todo jogador de minecraft deveria saber: minérios, comida, mob-farms e redstone no geral. O site se relaciona também com alguns assuntos que a equipe presenciou no primeiro ano de engenharia de computação, tais como organização de sistemas, eletônica embarcada e cálculo 1.
 Para a sessão de minérios temos três exemplos (um fácil, médio e lendário) dos três minérios mais importantes do jogo: ferro, ouro e esmeralda.
 Para a sessão de comidas temos também três exemplos das três comidas mais eficientes do jogo: carne de porco, cenoura/batata e melância
 Agora na sessão das mob-farms temos os três melhores exemplos para cada dimensão do jogo: overworld, nether e end
