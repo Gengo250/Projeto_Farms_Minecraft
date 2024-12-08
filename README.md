@@ -5,17 +5,19 @@
 
 ##No nosso site distribuimos quatro tópicos para abordar as farms mais essenciais que todo jogador de minecraft deveria saber: minérios, comida, mob-farms e redstone no geral. O site se relaciona também com alguns assuntos que a equipe presenciou no primeiro ano de engenharia de computação, tais como organização de sistemas, eletônica embarcada e cálculo 1.
 
+
 ###Conteúdo do site 💻
 
-##Para a sessão de minérios temos dois exemplos (um fácil e médio) dos três minérios mais importantes do jogo: ferro, ouro e esmeralda.
+##Para a sessão de minérios temos dois exemplos (um fácil e médio) dos três minérios mais importantes do jogo: ferro, ouro e esmeralda.🥇
 
-##Para a sessão de comidas temos também dois exemplos das três comidas mais eficientes do jogo: carne de porco, cenoura/batata e melância.
+##Para a sessão de comidas temos também dois exemplos das três comidas mais eficientes do jogo: carne de porco, cenoura/batata e melância.🥔
 
-##Agora na sessão das mob-farms temos os dois melhores exemplos para cada dimensão do jogo: overworld, nether e end.
+##Agora na sessão das mob-farms temos os dois melhores exemplos para cada dimensão do jogo: overworld, nether e end.👾
 
-##Como diferencial temos um site que serve de guia básico para a redstone e seus princial uso, sendo listados três ótimos usos da mesma.
+##Como diferencial temos um site que serve de guia básico para a redstone e seus princial uso, sendo listados três ótimos usos da mesma.🔴
 
 ##Ao clicar em alguns dos exemplos das farms há uma redirecionamento para um site contendo a explicação passo a passo da execução da mesma (contendo também fotos e vídeos) 📷
+
 
 ###Em relação ao progresso da construção do projeto 🗓️
 
