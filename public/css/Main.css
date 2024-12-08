@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Minecraft";
-  src: url("/public/fonte/minecraft_font.ttf") format("ttf");
+  src: url("/fonte/minecraft_font.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -134,7 +134,7 @@ header {
 }
 
 .frase {
-  background-image: url("/public/img/wallpaper.png");
+  background-image: url("/img/wallpaper.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -579,7 +579,7 @@ article .engimg {
 }
 
 .rodape {
-  background: url("/public/img/img_logo_referências/footer.png");
+  background: url("/img/img_logo_referências/footer.png");
 }
 
 .footer-container {
