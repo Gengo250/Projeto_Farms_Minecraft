@@ -134,7 +134,7 @@ header {
 }
 
 .frase {
-  background-image: url("/img/wallpaper.png");
+  background-image: url("public/img/wallpaper.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -579,7 +579,7 @@ article .engimg {
 }
 
 .rodape {
-  background: url("/img/img_logo_referências/footer.png");
+  background: url("public/img/img_logo_referências/footer.png");
 }
 
 .footer-container {
