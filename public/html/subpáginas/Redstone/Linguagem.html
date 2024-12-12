@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/css/subpagina.css" />
+  </head>
+  <body>
+    <div class="grid-conteiner">
+      <header>
+        <nav class="menu-header">
+          <div class="logo-container">
+            <a href="/public/html/Main.html" class="logo-link"
+              ><img
+                class="logo"
+                src="/public/img/img_logo_referências/logo.png"
+                alt="logo"
+            /></a>
+          </div>
+          <ul class="menu-list">
+            <li>
+              <a href="/public/html/apresentações/Redstone.html">Redstone</a>
+            </li>
+            <li class="dropdown">
+              <a href="/public/html/apresentações/Minérios.html" class="dropbtn"
+                >Minérios ▼</a
+              >
+              <div class="dropdown-content">
+                <a href="/public/html/apresentações/Minérios.html">Ferro</a>
+                <a href="/public/html/apresentações/Minérios.html">Ouro</a>
+                <a href="/public/html/apresentações/Minérios.html">Esmeralda</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="/public/html/apresentações/Comida.html" class="dropbtn"
+                >Comida ▼</a
+              >
+              <div class="dropdown-content">
+                <a href="/public/html/apresentações/Comida.html"
+                  >Carne de porco</a
+                >
+                <a href="/public/html/apresentações/Comida.html">Batata</a>
+                <a href="/public/html/apresentações/Comida.html">Frutas</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a
+                href="/public/html/apresentações/Mob_farms.html"
+                class="dropbtn"
+                >Mob-Farms ▼</a
+              >
+              <div class="dropdown-content">
+                <a href="/public/html/apresentações/Mob_farms.html">Overword</a>
+                <a href="/public/html/apresentações/Mob_farms.html">The end</a>
+                <a href="/public/html/apresentações/Mob_farms.html">Nether</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <nav></nav>
+
+      <div class="noticia">
+        <div class="img-conteiner">
+          <img src="/public/img/redstone/i7.png" alt="" />
+        </div>
+
+        <div class="conteudo">
+          <span class="categoria">LINGUAGEM</span>
+
+          <h1>
+            REDSTONE CORE I7, veja a seguir um pouco sobre a linguagem Redstone!
+          </h1>
+          <p>
+            Aprenda como o recurso avermelhado do mundo de blocos se assemelha
+            muito com uma linguagem de programação de montagem. O "Assembly" ou
+            linguagem de montagem é um estilo de programação utilizado por
+            compiladores para a manipulção de dados na memória, oque pode ser
+            relacionado com a Redstone e o jeito que suas "cargas" funcionam
+          </p>
+          <div class="autor-data">
+            <span>Por <strong>Ludraxter</strong></span>
+            <span>17.10.2024 às 10:36</span>
+          </div>
+        </div>
+      </div>
+
+      <article class="principal">
+        <div class="redacao">
+          <ol>
+            <div>
+              <p>ㅤ</p>
+            </div>
+            <li>
+              <h2>
+                Unidade Logica Aritmetica (ULA) e Linguagem Assembly em Sistemas
+                Redstone no Minecraft
+              </h2>
+            </li>
+            <li>
+              <p>
+                Esta farm utiliza mecânicas do Nether e o comportamento dos
+                hoglins para criar uma fonte eficiente de costeletas de porco e
+                couro. Siga as etapas abaixo para construí-la corretamente.
+              </p>
+            </li>
+            <li>
+              <div>
+                <p>ㅤ</p>
+              </div>
+            </li>
+            <li><h2>Contextualizando</h2></li>
+            <li>
+              <p>
+                A Unidade Lógica Aritmética (ULA) é um componente fundamental em
+                qualquer computador, responsável por realizar operações
+                aritméticas e lógicas que permitem a execução de programas e o
+                processamento de dados. No contexto do Minecraft, a ULA pode ser
+                implementada utilizando Redstone, uma ferramenta poderosa que
+                permite a criação de circuitos lógicos e máquinas complexas
+                dentro do jogo. Este texto compila uma explicação detalhada
+                sobre a ULA, seus componentes, funcionalidades e a linguagem
+                assembly personalizada utilizada em sistemas Redstone, com base
+                no vídeo "The Arithmetic Logic Unit - Let's Make a Redstone
+                Computer! #2" do canal "mattbatwings" no YouTube.
+              </p>
+            </li>
+
+            <li>
+              <h2>Olhar Geral para a Arquitetura do Computador Redstone</h2>
+            </li>
+            <li>
+              <p>
+                Para entender a ULA, é essencial conhecer a arquitetura geral do
+                computador Redstone, que inclui os seguintes componentes:
+              </p>
+            </li>
+            <li><h3>Memória de Instruções</h3></li>
+            <li>
+              <p>
+                Armazena o programa a ser executado, onde cada endereço de
+                memória contém uma instrução específica. O endereço 0 contém a
+                primeira instrução, o endereço 1 a segunda, e assim por diante.
+              </p>
+            </li>
+            <li><h3>Contador de Programa (PC):</h3></li>
+            <li>
+              <p>
+                Aponta para o endereço da instrução que está sendo executada no
+                momento. Inicialmente, o PC começa em 0 e é incrementado após a
+                execução de cada instrução
+              </p>
+            </li>
+            <li>
+              <h3>ULA (Unidade Lógica Aritmética):</h3>
+            </li>
+            <li>
+              <p>
+                O núcleo responsável por realizar cálculos aritméticos como
+                adição e subtração, bem como operações lógicas bit a bit.
+              </p>
+            </li>
+            <li><h3>Memória de Dados:</h3></li>
+            <li>
+              <p>
+                : Um banco de memória extenso para armazenar dados que o
+                programa utiliza, permitindo operações de leitura e escrita em
+                qualquer endereço.
+              </p>
+            </li>
+            <li><h3>Banco de Registradores:</h3></li>
+            <li>
+              <p>
+                Uma memória de acesso rápido contendo um pequeno número de
+                registradores, cada um armazenando um único número. Os
+                registradores facilitam o acesso rápido aos dados frequentemente
+                usados.
+              </p>
+            </li>
+            <li><h3>Pilha de Chamadas:</h3></li>
+            <li>
+              <p>
+                Gerencia a criação e execução de funções no programa,
+                armazenando informações sobre as funções ativas e seus pontos de
+                retorno
+              </p>
+            </li>
+            <li><h2>Componentes de Software</h2></li>
+            <li><h2>Programa</h2></li>
+            <li>
+              <p>
+                O programa é uma sequência de instruções que o computador
+                executa de forma sequencial. Cada instrução corresponde a uma
+                tarefa específica, semelhante a uma receita que um chef segue
+                passo a passo. No sistema Redstone, essas instruções são
+                gerenciadas pela linguagem de programação personalizada
+                utilizada para controlar a ULA e os demais componentes.
+              </p>
+            </li>
+            <li><h2>Linguagem de Programação Personalizada</h2></li>
+            <li>
+              <p>
+                No vídeo, é utilizada uma linguagem de programação personalizada
+                para simplificar os conceitos e facilitar a compreensão dos
+                mecanismos internos da ULA. Exemplos de instruções dessa
+                linguagem incluem:
+              </p>
+              <ul>
+                <li>
+                  <h3>ldi (Load Immediate):</h3>
+                </li>
+                <li><p>Carrega um valor imediato em um registrador.</p></li>
+                <li><h3>ADD:</h3></li>
+                <li>
+                  <p>Executa a operação de adição entre dois registradores.</p>
+                </li>
+                <li><h3>HLT (Halt):</h3></li>
+                <li>
+                  <p>Encerra a execução do programa..</p>
+                </li>
+              </ul>
+              <p>
+                Essa linguagem permite controlar diretamente a ULA e outros
+                componentes do computador Redstone, proporcionando uma interface
+                simplificada para a programação das operações lógicas e
+                aritméticas
+              </p>
+            </li>
+            <li><h2>Componentes de Hardware</h2></li>
+            <li><h2>Memoria de Comandos</h2></li>
+            <li>
+              <p>
+                A memória de instruções armazena o programa que será executado
+                pela ULA. Cada endereço de memória contém uma instrução
+                específica, organizadas sequencialmente. O PC utiliza essa
+                memória para buscar e executar as instruções uma a uma.
+              </p>
+            </li>
+            <li><h2>Contador de Programa (PC)</h2></li>
+            <li>
+              <p>
+                O PC é responsável por rastrear qual instrução está sendo
+                executada no momento. Após a execução de uma instrução, o PC é
+                incrementado para apontar para a próxima instrução na sequência
+              </p>
+            </li>
+            <li><h2>ULA (Unidade Lógica Aritmética)</h2></li>
+            <li>
+              <p>
+                A ULA é o componente central que realiza todas as operações
+                aritméticas e lógicas necessárias para a execução do programa.
+                No vídeo, a ULA é implementada usando Redstone no Minecraft,
+                demonstrando como circuitos lógicos podem ser utilizados para
+                construir um processador funcional.
+              </p>
+            </li>
+            <li><h2>Memoria de Dados</h2></li>
+            <li>
+              <p>
+                A memória de dados é utilizada para armazenar informações que o
+                programa precisa processar. Ela permite a leitura e escrita de
+                dados em qualquer endereço, servindo como um repositório de
+                informações que a ULA e outros componentes utilizam durante a
+                execução das operações.
+              </p>
+            </li>
+            <li><h2>Banco de Registradores</h2></li>
+            <li>
+              <p>
+                O banco de registradores oferece um armazenamento rápido e
+                temporário para dados que são frequentemente acessados. Com um
+                número limitado de registradores, esses componentes permitem que
+                a ULA acesse rapidamente os dados necessários para realizar
+                operações sem a necessidade de acessar a memória principal
+                constantemente
+              </p>
+            </li>
+            <li><h2>Pilha de Chamadas</h2></li>
+            <li>
+              <p>
+                A pilha de chamadas gerencia a execução de funções no programa,
+                armazenando informações sobre as funções atualmente ativas e os
+                pontos de retorno. Isso permite a criação de programas modulares
+                e facilita a reutilização de código.
+              </p>
+            </li>
+            <li><h2>Funcionalidades da ULA</h2></li>
+            <li>
+              <h3>Aritmética</h3>
+              <ul>
+                <li><h4>Adição:</h4></li>
+                <li>
+                  <p>
+                    A ULA realiza a adição utilizando um somador de transporte
+                    (carry-lookahead). Este somador propaga os bits de
+                    transporte de maneira eficiente, permitindo a adição de
+                    números binários.
+                  </p>
+                </li>
+                <li><h4>Subtração:</h4></li>
+                <li>
+                  <p>
+                    A subtração é implementada invertendo o segundo operando (B)
+                    e adicionando 1, utilizando o transporte de entrada
+                    (carry-in). Este método, conhecido como complemento de dois,
+                    permite que a subtração seja tratada como uma adição
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li><h2>Logica Bit a Bi</h2></li>
+            <li>
+              <p>
+                A ULA pode realizar operações lógicas bit a bit, operando em
+                cada par de bits dos operandos individualmente. As operações
+                lógicas suportadas incluem:
+              </p>
+            </li>
+            <li>
+              <ul>
+                <li><h3>AND:</h3></li>
+                <li>
+                  <p>
+                    Retorna 1 se ambos os bits forem 1, caso contrário retorna
+                    0.
+                  </p>
+                </li>
+                <li><h3>OR:</h3></li>
+                <li><p>Retorna 1 se pelo menos um dos bits for 1.</p></li>
+                <li><h3>XOR:</h3></li>
+                <li><p>Retorna 1 se os bits forem diferentes.</p></li>
+                <li><h3>NOT:</h3></li>
+                <li><p>Inverte o valor do bit</p></li>
+                <li><h3>NAND:</h3></li>
+                <li>
+                  <p>
+                    Retorna 0 se ambos os bits forem 1, caso contrário retorna
+                    1.
+                  </p>
+                </li>
+                <li><h3>NOR:</h3></li>
+                <li>
+                  <p>
+                    Retorna 1 se ambos os bits forem 0, caso contrário retorna
+                    0.
+                  </p>
+                </li>
+                <li><h3>XNOR:</h3></li>
+                <li><p>Retorna 1 se os bits forem iguais.</p></li>
+              </ul>
+            </li>
+            <li>
+              <p>
+                Essas operações permitem a manipulação de bits individuais e o
+                uso de máscaras de bits para controlar dados de forma precisa
+              </p>
+            </li>
+            <li><h2>Deslocamento de Bits</h2></li>
+            <li><h3>Deslocamento à esquerda:</h3></li>
+            <li>
+              <p>
+                Multiplica o número binário por 2, deslocando todos os bits para
+                a esquerda e adicionando um 0 na posição mais à direita.
+              </p>
+            </li>
+            <li><h3>Deslocamento à direita:</h3></li>
+            <li>
+              <p>
+                Divide o número binário por 2, deslocando todos os bits para a
+                direita e descartando o bit mais à direita.
+              </p>
+            </li>
+            <li>
+              <p>
+                A ULA implementa o deslocamento à esquerda pela adição do número
+                a si mesmo (x + x = 2x) e utiliza um mecanismo separado para o
+                deslocamento à direita.
+              </p>
+            </li>
+            <li><h2>Abordagem da ULA</h2></li>
+            <li>
+              <p>O vídeo explora duas abordagens para a Abordagem da ULA:</p>
+            </li>
+            <li><h3>Abordagem Simples</h3></li>
+            <li>
+              <p>
+                Nesta abordagem, circuitos separados são replicados para cada
+                operação aritmética e lógica. A saída desejada é selecionada
+                utilizando comparadores e sinais de controle. A vantagem dessa
+                abordagem está na sua simplicidade e Linguagem (Redstone) 5
+                flexibilidade, permitindo a fácil adição de novas operações. No
+                entanto, a desvantagem é a ineficiência em termos de espaço e
+                recursos, já que cada operação requer circuitos dedicados.
+              </p>
+            </li>
+            <li><h2>Abordagem Otimizada</h2></li>
+            <li>
+              <p>
+                Para otimizar a ULA, um somador de transporte é modificado para
+                realizar todas as operações necessárias. Sinais de controle são
+                utilizados para selecionar a funcionalidade desejada, permitindo
+                que um único conjunto de circuitos execute múltiplas operações.
+                Os sinais de controle incluem:
+              </p>
+            </li>
+            <li><h3>Inverter A:</h3></li>
+            <li><p>: Inverte a entrada A.</p></li>
+            <li><h3>Inverter B:</h3></li>
+            <li><p>: Inverte a entrada B.</p></li>
+            <li><h3>Carry In:</h3></li>
+            <li>
+              <p>
+                Controla o transporte de entrada para operações de subtração.
+              </p>
+            </li>
+            <li><h3>Flood Carry:</h3></li>
+            <li>
+              <p>
+                Define todos os carry-ins para 1, habilitando operações como
+                XOR.
+              </p>
+            </li>
+            <li><h3>XOR para OR:</h3></li>
+            <li>
+              <p>
+                Converte a porta XOR em uma porta OR, permitindo operações
+                lógicas baseadas em OR.
+              </p>
+            </li>
+            <li>
+              <p>
+                Essa abordagem reduz significativamente o uso de recursos e
+                otimiza o espaço necessário para a ULA, mantendo a capacidade de
+                realizar uma variedade de operações.
+              </p>
+            </li>
+            <li><h2>Linguagem Assembly para Redstone</h2></li>
+            <li>
+              <p>
+                Para controlar a ULA e os demais componentes do computador
+                Redstone, é utilizada uma linguagem de programação assembly
+                personalizada. Essa linguagem simplificada permite a escrita de
+                programas que interagem diretamente com o hardware, facilitando
+                a execução de operações aritméticas e lógicas
+              </p>
+            </li>
+            <li><h2>Abordagem em Redstone</h2></li>
+            <li>
+              <p>
+                O vídeo demonstra como a ULA é construída utilizando Redstone no
+                Minecraft, oferecendo uma visualização prática e interativa dos
+                conceitos teóricos. A implementação inclui:
+              </p>
+            </li>
+            <li>
+              <ul>
+                <li><h3>Construção das Portas Lógicas:</h3></li>
+                <li>
+                  <p>
+                    Utilização de Redstone para criar portas AND, OR, XOR, etc.,
+                    essenciais para as operações lógicas bit a bit.
+                  </p>
+                </li>
+                <li><h3>Somador de Transporte:</h3></li>
+                <li>
+                  <p>
+                    Construção de um somador de transporte utilizando Redstone,
+                    que permite a realização de adições e, por extensão,
+                    subtrações.
+                  </p>
+                </li>
+                <li><h3>Circuitos de Controle:</h3></li>
+                <li>
+                  <p>
+                    Implementação dos sinais de controle que permitem a seleção
+                    das operações aritméticas e lógicas, otimizando a ULA para
+                    realizar múltiplas funções com um único conjunto de
+                    circuitos.
+                  </p>
+                </li>
+                <li><h3>Memória e Registradores</h3></li>
+                <li>
+                  <p>
+                    Criação de memórias de instruções e dados utilizando
+                    Redstone, além de um banco de registradores para
+                    armazenamento rápido de valores
+                  </p>
+                </li>
+                <li><h3>Pilha de Chamadas:</h3></li>
+                <li>
+                  <p>
+                    : Implementação da pilha de chamadas para gerenciar a
+                    execução de funções no programa, permitindo a modularidade e
+                    reutilização de código.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li>Comentarios Finais</li>
+            <li>
+              Explorar diferentes designs de ULA e compreender a importância das
+              abordagens otimizadas são passos cruciais para quem deseja
+              aprofundar seus conhecimentos em arquitetura de computadores.
+              Ferramentas como Redstone no Minecraft oferecem uma plataforma
+              interativa para experimentar e visualizar esses conceitos,
+              tornando o aprendizado mais dinâmico e acessível. Para
+              complementar, a plataforma Brilliant e cursos de programação como
+              "Programming with Python" são excelentes recursos para expandir o
+              conhecimento em ciência da computação e preparar-se para
+              aplicações práticas no desenvolvimento de sistemas computacionais.
+            </li>
+          </ol>
+
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/dV_lf1kyV9M?si=yj2Ztx7x72m4goW7"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </article>
+    </div>
+
+    <div class="rodape">
+      <footer class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>INSTITUCIONAL</h3>
+            <ul>
+              <li><a href="#">Quem Somos</a></li>
+              <li><a href="#">Contato</a></li>
+              <li>
+                <a href="/public/html/PoliticadePrivacidade.html"
+                  >Política de Privacidade</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>CANAIS DOS ENGENHEIROS</h3>
+            <ul>
+              <li>
+                <a href="https://www.youtube.com/@viniccius13">Viníccius 13</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@rodrigoruiz2">RodriR ARG</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@xisumavoid">Xisumavoid</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@ThatMumboJumbo"
+                  >Mumbo Jumbo</a
+                >
+              </li>
+              <li><a href="https://www.youtube.com/@ilmango">ilmango</a></li>
+              <li>
+                <a href="https://www.youtube.com/@TangoTekLP">Tango Tek</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>CONHEÇA O GRUPO</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://aventuraautomatica.fandom.com/pt-br/wiki/Redstone_Gang_(série)"
+                  >Redstone Gang</a
+                >
+              </li>
+              <li><a href="https://voidcraft.netlify.app">Voidcraft</a></li>
+              <li>
+                <a
+                  href="https://www.gsuplementos.com.br/?srsltid=AfmBOordljV2JW9nmyEdZOh5eJhuHlsh38m_yR_-8ih2Rj3AYTqVYXse"
+                  >Growth</a
+                >
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@SpaceToday">Space Today</a>
+              </li>
+              <li><a href="https://hermitcraft.com">Hermitcraft</a></li>
+              <li>
+                <a href="https://www.youtube.com/@renatocariani"
+                  >Canal Renato Cariani</a
+                >
+              </li>
+              <li><a href="https://www.youtube.com/@EIMINE">EI MINE</a></li>
+            </ul>
+          </div>
+          <div class="footer-section newsletter">
+            <h3>NOS MANDE UMA MENSAGEM</h3>
+            <form action="#">
+              <input
+                type="email"
+                placeholder="Qual é o ra do Miguel?"
+                required
+              />
+              <button type="submit">→</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2024 Minefarms. Todos os direitos reservados.</p>
+          <p>Desenvolvido por <a href="#">CREA-MC</a></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
